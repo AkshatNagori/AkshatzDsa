@@ -1,0 +1,13 @@
+def checkNo(arr,x):
+  print(type(arr))
+  print(arr)
+  if len(arr)==0:
+    return False
+  if arr[0]==x:
+    return True
+  else:
+    return checkNo(arr[1:],x)
+x=int(input("Enter a no"))
+arr=[1,2,3,4,5]
+
+print (checkNo(arr,x))

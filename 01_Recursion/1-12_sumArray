@@ -1,0 +1,10 @@
+def sumArray(arr):
+  print(type(arr))
+  print(arr)
+  if len(arr)==0:
+    return 0
+  else:
+    return arr[0] + sumArray(arr[1:])
+arr=[1,2,3,4,5]
+
+print (sumArray(arr))
